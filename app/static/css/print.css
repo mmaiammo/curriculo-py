@@ -1,0 +1,22 @@
+.sidenav {
+  display: none !important;
+}
+
+.main {
+  margin: 0px;
+  /* Same as the width of the sidenav */
+  padding: 0px;
+}
+
+.a4 {
+  width: 100% !important;
+  height: 80% !important;
+  border: 1px solid #e5e5e5 !important;
+  margin: 0px !important;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@page {
+  margin: 1rem 1rem 0 1rem;
+}
