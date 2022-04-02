@@ -4,9 +4,9 @@ from flask import Flask
 from routes.main import main
 
 
-def create_app(config_object="config"):
+def create_app():
     app = Flask(__name__)
-    app.config.from_object(config_object)
+    # app.config.from_object(config_object)
     app.register_blueprint(main)
 
     return app
