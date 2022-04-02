@@ -4,4 +4,5 @@ mongo = PyMongo()
 
 
 def init_app(app):
-    return mongo.init_app(app)
+    mongo.init_app(app)
+    # mongo.crea
