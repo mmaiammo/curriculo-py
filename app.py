@@ -1,13 +1,10 @@
 from flask import Flask
-from databases import dbmongo
+# from databases import dbmongo
 
 from routes.main import main
 
+app = Flask(__name__)
+app.register_blueprint(main)
 
-def create_app(config_object="settings"):
-    app = Flask(__name__)
-    app.config.from_object(config_object)
-    app.register_blueprint(main)
-
-    dbmongo.init_app(app)
-    return app
+if __name__ == "__main__":
+    app.run(debug=True)
