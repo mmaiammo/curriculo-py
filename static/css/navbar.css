@@ -1,6 +1,17 @@
+.navbar-brand  {
+  /* border: solid 1px #fff; */
+  margin-right: 0;
+}
+.navbar-brand .logo {
+  width: 2rem;
+  height: 2rem;
+  margin-left: .1rem;
+}
+.navbar-brand .texto {
+  font-size: .8rem;
+}
 .navbar {
     padding: 0;
-
     height: auto;
 }
 .nav-bar {
@@ -10,11 +21,6 @@
   margin: 0;
   border: solid 2px #fff;
 }
-
-/* .principal {
-  background-color: #212121;
-
-} */
 
 .snip1189 {
   font-family: "PT Sans Narrow", sans-serif;
