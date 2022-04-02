@@ -1,5 +1,5 @@
 from flask import Flask
-from databases import dbmongo
+# from databases import dbmongo
 
 from routes.main import main
 
@@ -9,5 +9,5 @@ def create_app(config_object="settings"):
     app.config.from_object(config_object)
     app.register_blueprint(main)
 
-    dbmongo.init_app(app)
+    # dbmongo.init_app(app)
     return app
