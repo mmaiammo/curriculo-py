@@ -1,23 +1,20 @@
 from flask import Flask
 # from .extensions import mongo
 #
-
 from main import main
 
 from flask_pymongo import PyMongo
 mongo = PyMongo()
 
-
-def create_app():
-    app = Flask(__name__)
-    app.config.from_object('settings')
-
-    mongo.init_app(app)
-
-    app.register_blueprint(main)
-
-    return app
+app = Flask(__name__)
+app.config.from_object('settings')
+app.register_blueprint(main)
+mongo.init_app(app)
 
 
-if __name__ == "__main__":
-    create_app().run()
+# def create_app():
+#     return app
+
+
+# if __name__ == "__main__":
+#     create_app().run()
