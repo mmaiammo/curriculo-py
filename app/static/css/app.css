@@ -68,3 +68,15 @@ i {
 .smoothscroll-top i.fa {
   line-height: inherit;
 }
+
+.competencias .check {
+  display: none;
+}
+.competencias img {
+  width: 1.4rem;
+  height: .8rem;
+  margin-bottom: .2rem;
+  margin-right: .2rem;
+  /* filter: grayscale(50%); */
+}
+

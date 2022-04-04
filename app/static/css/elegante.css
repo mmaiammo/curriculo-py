@@ -200,6 +200,13 @@ ul {
   font-size: 1rem;
   padding-bottom: 0.3rem !important;
 }
+.competencias img {
+    display: none !important;
+}
+.competencias .check {
+   display: inline !important;
+   margin-right: .3rem !important;
+}
 
 .experencias {
   position: relative;

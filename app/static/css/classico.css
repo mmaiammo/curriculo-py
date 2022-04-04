@@ -276,3 +276,6 @@ ul {
   padding-top: .5rem;
   margin: -1.6rem 2.8rem 0;
 }
+.competencias img {
+  filter: sepia(100%) saturate(150%) brightness(70%) hue-rotate(180deg);
+}
