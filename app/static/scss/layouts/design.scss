@@ -1,300 +1,325 @@
-$empresa: #D35400;
-$fonts: #D35400;
-$icon-fw: #873600;
-
-$nome-bg: #F7DC6F;
-$nome-color: #FFF;
-
-$pessoal-color: #F7DC6F;
-$pessoal-bg: #2C3E50;
-
-
-.main {
-    .row {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    span,
-    p,
-    li {
-        color: $fonts;
-    }
-    .pessoal {
-        background-color: $pessoal-bg;
-        float: right;
-        span,
-        p,
-        li {
-            color: $pessoal-color;
-        }
-        i {
-            color: $pessoal-color;
-        }   
-        .header {
-            i {
-                color: $pessoal-color;
-            }
-        }
-
-    }
-    .profissional {
-        background: url("/storage/image/design.webp");        
-        background-repeat: no-repeat;
-        background-position: top 0px left 0px;
-        background-size: 528px 1560px;
-        opacity: 0.7;
-    }
-    .header {
-        i {
-            color: $icon-fw;
-        }
-    }
-    i {
-        color: $icon-fw;
-        padding-right: 0.5rem;
-    }
-    .nome {
-        background-color: $nome-bg;
-        h1, h5, p {
-            color: $nome-color;
-            opacity: 10;
-        }
-    }
+.main .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
-.a4 {
-    height: 1570px !important;
+
+.main span,
+.main p,
+.main li {
+  color: #D35400;
 }
-// {{-- ╔═════════════════════════════════╗ --}}
-// {{-- ║     Coluna 1: Comum a todos     ║ --}}
-// {{-- ╚═════════════════════════════════╝ --}}
+
+.main .pessoal {
+  background-color: #2C3E50;
+  float: right;
+}
+
+.main .pessoal span,
+.main .pessoal p,
+.main .pessoal li {
+  color: #F7DC6F;
+}
+
+.main .pessoal i {
+  color: #F7DC6F;
+}
+
+.main .pessoal .header i {
+  color: #F7DC6F;
+}
+
+// .main .profissional {
+//   background: url("../img/design.webp");
+//   background-repeat: no-repeat;
+//   background-position: top 0px left 0px;
+//   background-size: 528px auto;
+//   opacity: 0.7;
+// }
+
+.main .header i {
+  color: #873600;
+}
+
+.main i {
+  color: #873600;
+  padding-right: 0.5rem;
+}
+
+.main .nome {
+  background-color: #F7DC6F;
+}
+
+.main .nome h1, .main .nome h5, .main .nome p {
+  color: #FFF;
+  opacity: 10;
+}
 
 .hr {
-    position: relative;
-    border-bottom: solid #aaa 1px;
-    width: 95%;
-    margin: -0.5rem 0 1rem 0;
+  position: relative;
+  border-bottom: solid #aaa 1px;
+  width: 95%;
+  margin: -0.5rem 0 1rem 0;
 }
+
 ul {
-    list-style: none;
+  list-style: none;
 }
+
 .header span {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
+
 .descricao p {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 1rem;
-    padding-right: 0.8rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1rem;
+  padding-right: 0.8rem;
 }
 
-// {{-- ╔═════════════════════════════════╗ --}}
-// {{-- ║     Coluna 2: Dados Pessoais    ║ --}}
-// {{-- ╚═════════════════════════════════╝ --}}
 .image {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 0 !important;
-    padding: 0 !important;
-    position: relative;
-}
-.nome {   
-    opacity: 0.7;
-    padding-top: 1rem;
-    position: relative;
-    top: -10px;
-    right: 0;
-    left: 0;
-    width: auto;
-    height: 135px;
-}
-.nome .firstname {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 2.5rem;
-    color: #fff;
-    margin-bottom: 0 !important;
-    margin-left: 2rem;
-    opacity: 1 !important;
-}
-.nome .secondname {
-    font-family: "PT Sans Narrow", sans-serif;
-    color: #fff;
-    font-size: 1.8rem;
-    margin-bottom: 0.3rem !important;
-    margin-left: 2rem;
-}
-.nome .cargo {
-    font-family: "PT Sans Narrow", sans-serif;
-    text-align: center;
-    font-size: 1rem;
-    color: #fff;
-}
-.caracteristicas {
-    position: relative;
-    padding: 2rem 0 0 1rem;
-    margin-bottom: 0 !important;
-}
-.caracteristicas ul {
-    padding-left: 0.5rem;
-}
-.caracteristicas ul li {
-    list-style: none;
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 1rem;
-    padding-bottom: 0.3rem !important;
-}
-.caracteristicas .check-list i {
-    padding-right: 0.1rem !important;
-}
-.sobre {
-    position: relative;
-    padding: 3rem 0 0 1rem;
-    margin-bottom: 0 !important;
-}
-.sobre .descricao p {
-    font-size: 1rem;
-    margin-bottom: 0.5rem !important;
-}
-.contato {
-    position: relative;
-    padding: 3rem 0 0 1rem;
-    margin-bottom: 0 !important;
-}
-.contato .descricao p {
-    line-height: 90%;
-    margin-bottom: 0.5rem;
-}
-.contato .descricao p i {
-    width: 1.3rem;
-    font-size: 0.8rem;
-}
-.contato .descricao p span {
-    font-size: 0.8rem;
-}
-.linkedin span {
-    font-size: 0.7rem !important;
-}
-.hobbies {
-    position: relative;
-    padding: 3rem 0 0 1rem;
-    color: #666;
-}
-.hobbies .descricao .row div {
-    margin: 0 0 2.5rem 0;
-    //border: 1px solid #000;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  position: relative;
 }
 
-// {{-- ╔═════════════════════════════════╗ --}}
-// {{-- ║   Coluna 2: Dados Profissional  ║ --}}
-// {{-- ╚═════════════════════════════════╝ --}}
+.nome {
+  opacity: 0.7;
+  padding-top: 1rem;
+  position: relative;
+  top: -10px;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: 135px;
+}
+
+.nome .firstname {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 0 !important;
+  margin-left: 2rem;
+  opacity: 1 !important;
+}
+
+.nome .secondname {
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem !important;
+  margin-left: 2rem;
+}
+
+.nome .cargo {
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.caracteristicas {
+  position: relative;
+  padding: 2rem 0 0 1rem;
+  margin-bottom: 0 !important;
+}
+
+.caracteristicas ul {
+  padding-left: 0.5rem;
+}
+
+.caracteristicas ul li {
+  list-style: none;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 0.3rem !important;
+}
+
+.caracteristicas .check-list i {
+  padding-right: 0.1rem !important;
+}
+
+.sobre {
+  position: relative;
+  padding: 3rem 0 0 1rem;
+  margin-bottom: 0 !important;
+}
+
+.sobre .descricao p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem !important;
+}
+
+.contato {
+  position: relative;
+  padding: 3rem 0 0 1rem;
+  margin-bottom: 0 !important;
+}
+
+.contato .descricao p {
+  line-height: 90%;
+  margin-bottom: 0.5rem;
+}
+
+.contato .descricao p i {
+  width: 1.3rem;
+  font-size: 0.8rem;
+}
+
+.contato .descricao p span {
+  font-size: 0.8rem;
+}
+
+.linkedin span {
+  font-size: 0.7rem !important;
+}
+
+.hobbies {
+  position: relative;
+  padding: 3rem 0 0 1rem;
+  color: #666;
+}
+
+.hobbies .descricao .row div {
+  margin: 0 0 2.5rem 0;
+}
+
 .profissional {
-    padding: 1rem 0 0 1.5rem;
+  padding: 1rem 0 0rem 1.5rem;
 }
+
 .objetivo {
-    padding-top: 2rem;
+  padding-top: 2rem;
 }
+
 .objetivo .descricao p {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
+
 .competencias {
-    position: relative;
-    padding: 2rem 0 0 0 !important;
+  position: relative;
+  padding: 2rem 0 0 0 !important;
 }
+
 .competencias ul li {
-    list-style: none;
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 1rem;
-    padding-bottom: 0.3rem !important;
+  list-style: none;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 0.3rem !important;
 }
+
 .competencias .check-list {
-    width: 97%;
-    padding-left: 0rem !important;
-    margin-bottom: 0 !important;
+  width: 97%;
+  padding-left: 0rem !important;
+  margin-bottom: 0 !important;
 }
+
 .competencias .check-list li {
-    line-height: 130%;
-    font-size: 1rem;
-    padding-bottom: 0.3rem !important;
+  line-height: 130%;
+  font-size: 1rem;
+  padding-bottom: 0.3rem !important;
 }
+.competencias img {
+    display: none !important;
+}
+.competencias .check {
+   display: inline !important;
+   margin-right: .3rem !important;
+}
+
 .experencias {
-    position: relative;
-    padding: 2rem 0 0 0;
+  position: relative;
+  padding: 2rem 0 0 0;
 }
+
 .experencias .row {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .experencias .empresa {
-    padding: 0 0 0 0.5rem;
+  padding: 0 0 0 0.5rem;
 }
+
 .experencias .empresa p {
-    margin: 0 0 0.3rem 0;
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 0.7rem;
+  margin: 0 0 0.3rem 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 0.7rem;
 }
+
 .experencias .empresa p:first-of-type {
-    font-family: "PT Sans Narrow", sans-serif;
-    color: $empresa;
-    font-size: 0.9rem;
-    font-weight: bold;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #D35400;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
+
 .experencias .atividades p:first-of-type {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    padding-bottom: 0.5rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
 }
+
 .experencias .atividades p {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 0.9rem;
-    width: 95%;
-    margin-bottom: 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 0.9rem;
+  width: 95%;
+  margin-bottom: 0;
 }
+
 .varios {
-    position: relative;
-    padding: 2rem 0 0 0;
+  position: relative;
+  padding: 2rem 0 0 0;
 }
+
 .varios .formacao p:first-of-type {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 0.9rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 0.9rem;
 }
+
 .varios .formacao {
-    position: relative;
+  position: relative;
 }
+
 .varios .idioma {
-    position: relative;
-    padding-right: 1.2rem;
+  position: relative;
+  padding-right: 1.2rem;
 }
+
 .varios .descricao {
-    // border:solid #F00 1px;
-    margin: 0 !important;
-    padding-left: 0.7rem !important;
+  margin: 0 !important;
+  padding-left: 0.7rem !important;
 }
+
 .varios .descricao p {
-    margin: 0 0 0.3rem 0;
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 0.7rem;
-    padding: 0;
+  margin: 0 0 0.3rem 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 0.7rem;
+  padding: 0;
 }
-.assinatura {
-    position: relative;
-    float: none;
-    padding: 1rem 0 0 0;
-    margin-right: 2.5rem;
-    margin-top: 1rem;
-    text-align: center;
-}
+
+
 .assinatura img {
-    width: 8.5rem;
-    filter: sepia(100%) hue-rotate(900deg) saturate(80%);
+  width: 8.5rem;
+  -webkit-filter: sepia(100%) hue-rotate(900deg) saturate(80%);
+          filter: sepia(100%) hue-rotate(900deg) saturate(80%);
 }
+
 .assinatura .cpfass {
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 1rem;
-    text-align: center;
-    border-top: solid #eee 1px;
-    padding-top: 0.5rem;
-    margin: -1.6rem 2.8rem 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  border-top: solid #eee 0px;
+  padding-top: 0.5rem;
+  padding-bottom: 10px;
+  margin: -1.6rem 2.8rem 0;
 }

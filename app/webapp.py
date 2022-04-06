@@ -1,25 +1,21 @@
+import requests  # type: ignore
+# import json
+
 from flask import Blueprint
 from flask import render_template
-# from flask import Flask
-# from flask import request
-# from flask import url_for
-# from flask import redirect
-# from flask import flash
-# from flask import render_template
 
 webapp = Blueprint('webapp', __name__)
 
 
 @webapp.route('/')
 def index():
-    return render_template('main.html')
+    return render_template('curriculo/curriculo.html')
 
 
-# @run.route('/novo')
-# def novoCurriculo():
-#     return render_template('curriculo.html')
-
-
-# @run.route('/novo', methods=["POST"])
-# def inserirCurriculo():
-#     return render_template('curriculo.html')
+@webapp.route('/list')
+def list():
+    response = requests.get(
+        "https://curriculo-node.herokuapp.com/competencias")
+    competencias = response.json()
+    print('req:', competencias)
+    return render_template('curriculo/list.html', competencias=competencias)

@@ -1,0 +1,56 @@
+{% extends 'shared/base.html' %} 
+
+{% block title %}Lista de Currículos {% endblock%}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/list.min.css') }}" />
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid list-curriculo shadow p-3 mb-5 bg-body rounded">
+        <div class="row">
+            <main>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Currículos Cadastrados</h1>
+                </div>
+                <div class="table-responsive">
+
+                    {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
+                    <div class="alert alert-success" role="alert">
+                        {{ message }}
+                    </div>
+                    {% endfor %} {% endif %} {% endwith %}
+
+                    <a href="#" class="btn btn-dark add_new">Adicionar Novo Currículo</a>
+                    <table class="table table-striped table-sm zui-table zui-table-rounded">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Nome</th>
+                                <th>Editar</th>
+                                <th>Excluir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for c in competencias %}
+                            <tr>
+                                <th scope="row">{{ c['categoria'] }}</th>
+                                <td>{{ c['texto'] }}</td>
+                                <td>Edit</td>
+                                <td>Exclude</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </main>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block js %}
+
+{% endblock %}
