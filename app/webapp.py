@@ -1,4 +1,5 @@
-import requests  # type: ignore
+import requests
+# type: ignore
 # import json
 
 from flask import Blueprint
