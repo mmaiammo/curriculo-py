@@ -1,3 +1,4 @@
+
 .navbar-brand  {
   /* border: solid 1px #fff; */
   margin-right: 0;
@@ -115,6 +116,9 @@
 .dropdown {
   position: relative;
   display: inline-block;
+}
+.dropdown-content i {
+  margin-right: .3rem;
 }
 
 .dropdown-content {

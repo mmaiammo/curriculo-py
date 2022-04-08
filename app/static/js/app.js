@@ -36,6 +36,7 @@ function scrollToTop() {
     .animate({ scrollTop: 0 }, 50);
 }
 
+// Troca estilo
 window.onload = function () {
   var pathname = $(location).attr("pathname");
   let theme = sessionStorage.getItem("theme");
@@ -44,7 +45,7 @@ window.onload = function () {
     if (pathname == "/") {
       document
         .getElementById("cssid")
-        .setAttribute("href", "css/classico.min.css");
+        .setAttribute("href", "static/css/classico.min.css");
     }
   }
 
