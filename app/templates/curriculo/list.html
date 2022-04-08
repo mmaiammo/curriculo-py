@@ -3,7 +3,7 @@
 {% block title %}Lista de Currículos {% endblock%}
 
 {% block css %}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" />
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" /> -->
 <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" />
 
 <link rel="stylesheet" href="{{ url_for('static', filename='css/list.min.css') }}" />
@@ -16,7 +16,7 @@
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Currículos Cadastrados</h1>
                 </div>
-                <div class="d-flexnavbar.minnavbar.mins">
+                <div class="d-flexnavbar.minnavbar.mins conteudo">
 
                     {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
                     <div class="alert alert-success" role="alert">
@@ -24,28 +24,36 @@
                     </div>
                     {% endfor %} {% endif %} {% endwith %}
 
-                    <a href="#" class="btn btn-dark add_new">Adicionar Novo Currículo</a>
-                    <table id="tblcurriculo" class="table table-striped table-sm">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Categoria</th>
-                                <th>Nome</th>
-                                <th>Editar</th>
-                                <th>Excluir</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for c in competencias %}
-                            <tr>
-                                <th scope="row">{{ c['categoria'] }}</th>
-                                <td>{{ c['texto'] }}</td>
-                                <td>Edit</td>
-                                <td>Exclude</td>
-                            </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
+                    <!-- Add button curriculo -->
+                    <div class="col col-sm-12 add_box">
+                        <a href="#" class="btn btn-dark add_new">Adicionar Novo Currículo</a>
+                    </div>
 
+                    <!-- curriculo's table -->
+                    <div class="col col-sm-12">
+                        <table id="tblcurriculo" class="table table-striped table-sm">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Objetivo</th>
+                                    <th>Cargo</th>
+                                    <th class="no-sort"></th>
+                                    <th class="no-sort"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for c in curriculos %}
+                                <tr>
+                                    <th scope="row">{{ c['nome'] }}</th>
+                                    <td>{{ c['objetivo'] }}</td>
+                                    <td>{{ c['cargo'] }}</td>
+                                    <td class="text-center"><button type="button" class="btn btn-outline-secondary btn-xs">Editar</button></td>
+                                    <td class="text-center"><button type="button" class="btn btn-outline-danger btn-xs">Excluir</button></td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
 
                 </div>
             </main>
@@ -65,9 +73,14 @@
     $(document).ready(function() {
         $('#tblcurriculo').DataTable({
             language: {
-                url: "{{ url_for('static', filename='plugins/pt-BR.json') }}" 
+                url: "{{ url_for('static', filename='plugins/pt-BR.json') }}",
+                
                 //'../../../app/plugins/pt-BR.json'
-            }
+            },
+            "columnDefs": [{
+                "targets": 'no-sort',
+                "orderable": false,
+            }]
         });
     });
 </script>

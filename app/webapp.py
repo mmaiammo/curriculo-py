@@ -16,7 +16,6 @@ def index():
 @webapp.route('/list')
 def list():
     response = requests.get(
-        "https://curriculo-node.herokuapp.com/competencias")
-    competencias = response.json()
-    print('req:', competencias)
-    return render_template('curriculo/list.html', competencias=competencias)
+        "https://curriculo-node.herokuapp.com/curriculos")
+    curriculos = response.json()
+    return render_template('curriculo/list.html', curriculos=curriculos)

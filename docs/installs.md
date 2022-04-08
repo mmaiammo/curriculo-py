@@ -25,7 +25,8 @@ $ pip install pymongo
 $ pip install autopep8
 
 
-
+- Run freeze
+$ pip freeze > requirements.txt
 
 
 

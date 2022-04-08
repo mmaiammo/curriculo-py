@@ -57,6 +57,7 @@ window.onload = function () {
   }
 };
 
+// Troca CSS
 function troca_css(cssFile) {
   var pathname = $(location).attr("pathname");
   sessionStorage.setItem("theme", cssFile);
@@ -69,6 +70,7 @@ function troca_css(cssFile) {
   }
 }
 
+// #region print 
 function print() {
   $("#a4").print({
     globalStyles: true,
@@ -85,7 +87,9 @@ function print() {
     doctype: "<!doctype html>",
   });
 }
+// .end_region_print
 
+// Topo da tela
 $(document).on("scroll", function () {
   if ($(window).scrollTop() > 100) {
     $(".smoothscroll-top").addClass("show");
@@ -106,3 +110,4 @@ function scrollToTop() {
     .animate({ scrollTop: 0 }, 150)
     .animate({ scrollTop: 0 }, 50);
 }
+// .end_topo_da_tela

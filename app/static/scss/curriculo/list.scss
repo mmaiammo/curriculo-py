@@ -1,12 +1,23 @@
+#tblcurriculo {
+  // max-width: auto;
+}
+.conteudo {
+  font-size: .8rem;
+
+}
+
+
 .list-curriculo {
   font-family: "PT Sans Narrow", sans-serif;
   max-width: 992px;
   
 }
+.add_box {
+  text-align: right;
+  margin: 0 0 2rem 0;
+}
 
 .add_new {
-  float: right;
-  margin: 1rem 0;
   width: 180px;
   height: 45px;
   font-size: 11px;
@@ -28,27 +39,4 @@
   border: solid 1px #f8f9fa;
   color: #335c67;
   transform: translateY(-7px);
-}
-
-.zui-table {
-    border: solid 1px #DDEEEE;
-    border-collapse: collapse;
-    border-spacing: 0;
-    font: normal 13px Arial, sans-serif;
-}
-.zui-table thead th {
-    color: #336B6B;
-    padding: 9px 0 7px 10px;
-    font-weight: normal; 
-    font-size: .7rem;
-}
-
-.zui-table-rounded, .zui-table-rounded thead th {
-    border: none;
-}
-.zui-table-rounded thead th:first-child {
-    border-radius: 4px 0 0 0;
-}
-.zui-table-rounded thead th:last-child {
-    border-radius: 0 4px 0 0;
 }
