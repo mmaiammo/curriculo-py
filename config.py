@@ -10,6 +10,7 @@ class Config(object):
     DEBUG = False
     TESTING = False
     CSRF_ENABLED = True
+    API_MONGO = "https://curriculo-node.herokuapp.com/curriculo"
 
 
 class ProductionConfig(Config):
@@ -21,4 +22,6 @@ class DevelopmentConfig(Config):
     ENV = "development"
     DEVELOPMENT = True
     DEBUG = True
-    API_MONGO = "http://127.0.0.1:3000/curriculo"
+    API_MONGO = "https://curriculo-node.herokuapp.com/curriculo"
+
+    # API_MONGO = "http://127.0.0.1:3000/curriculo"
