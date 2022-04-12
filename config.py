@@ -14,10 +14,11 @@ class Config(object):
 
 class ProductionConfig(Config):
     DEBUG = False
+    API_MONGO = "https://curriculo-node.herokuapp.com/curriculo"
 
 
 class DevelopmentConfig(Config):
     ENV = "development"
     DEVELOPMENT = True
     DEBUG = True
-    API_MONGO = "https://curriculo-node.herokuapp.com/curriculo"
+    API_MONGO = "http://127.0.0.1:3000/curriculo"

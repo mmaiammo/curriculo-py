@@ -20,12 +20,18 @@ def list():
     return render_template('curriculo/list.html', curriculos=curriculos)
 
 
-@webapp.route('/list/<int:page_id>')
-def listone(page_id):
+# router.get('/:id', UserController.findOne)
+
+
+@webapp.route('/list/<id>')
+def listone(id):
     # , "?/:62502f5a559389bd6aaa7fbc"
-    print(page_id)
-    response = requests.get(current_app.config["API_MONGO"], page_id)
+    url = current_app.config["API_MONGO"] + '/' + id
+    # print(url)
+
+    response = requests.get(url)
     curriculos = response.json()
+    # print(curriculos)
     return render_template('curriculo/list.html', curriculos=curriculos)
 
 

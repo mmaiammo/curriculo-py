@@ -71,9 +71,10 @@
 
 <script>
     $(document).ready(function() {
+        
         $('#tblcurriculo').DataTable({
-            language: {
-                url: "{{ url_for('static', filename='plugins/pt-BR.json') }}",
+            "language": {
+                "url": "{{ url_for('static', filename='plugins/pt-BR.json') }}",
                 
                 //'../../../app/plugins/pt-BR.json'
             },
@@ -82,6 +83,10 @@
                 "orderable": false,
             }]
         });
+
+        // table.ajax.url( 'http://127.0.0.1:3333/curriculo' ).load();    
+
+
     });
 </script>
 {% endblock %}
