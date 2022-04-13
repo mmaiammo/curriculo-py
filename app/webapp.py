@@ -20,18 +20,11 @@ def list():
     return render_template('curriculo/list.html', curriculos=curriculos)
 
 
-# router.get('/:id', UserController.findOne)
-
-
 @webapp.route('/list/<id>')
 def listone(id):
-    # , "?/:62502f5a559389bd6aaa7fbc"
     url = current_app.config["API_MONGO"] + '/' + id
-    # print(url)
-
     response = requests.get(url)
     curriculos = response.json()
-    # print(curriculos)
     return render_template('curriculo/list.html', curriculos=curriculos)
 
 
@@ -40,7 +33,6 @@ def create():
     response = requests.post(
         "https://curriculo-node.herokuapp.com/curriculos")
     curriculos = response.json()
-    # print(curriculos)
     return render_template('curriculo/list.html', curriculos=curriculos)
 
 
@@ -50,3 +42,8 @@ def edit():
         "https://curriculo-node.herokuapp.com/curriculos")
     curriculos = response.json()
     return render_template('curriculo/list.html', curriculos=curriculos)
+
+
+@webapp.route('/sobre')
+def about():
+    return render_template('help/about.html')

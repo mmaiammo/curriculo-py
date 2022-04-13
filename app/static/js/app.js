@@ -13,28 +13,6 @@ function saydone() {
   document.getElementsByClassName("main")[0].style.visibility = "visible";
 }
 
-$(function () {
-  $(document).on("scroll", function () {
-    if ($(window).scrollTop() > 100) {
-      $(".smoothscroll-top").addClass("show");
-    } else {
-      $(".smoothscroll-top").removeClass("show");
-    }
-  });
-  $(".smoothscroll-top").on("click", scrollToTop);
-});
-
-function scrollToTop() {
-  verticalOffset = typeof verticalOffset != "undefined" ? verticalOffset : 0;
-  element = $("body");
-  offset = element.offset();
-  offsetTop = offset.top;
-  $("html, body")
-    .animate({ scrollTop: offsetTop }, 600, "linear")
-    .animate({ scrollTop: 25 }, 200)
-    .animate({ scrollTop: 0 }, 150)
-    .animate({ scrollTop: 0 }, 50);
-}
 
 // Troca estilo
 window.onload = function () {
@@ -90,14 +68,17 @@ function print() {
 // .end_region_print
 
 // Topo da tela
-$(document).on("scroll", function () {
-  if ($(window).scrollTop() > 100) {
-    $(".smoothscroll-top").addClass("show");
-  } else {
-    $(".smoothscroll-top").removeClass("show");
-  }
+
+$(function () {
+  $(document).on("scroll", function () {
+    if ($(window).scrollTop() > 100) {
+      $(".smoothscroll-top").addClass("show");
+    } else {
+      $(".smoothscroll-top").removeClass("show");
+    }
+  });
+  $(".smoothscroll-top").on("click", scrollToTop);
 });
-$(".smoothscroll-top").on("click", scrollToTop);
 
 function scrollToTop() {
   verticalOffset = typeof verticalOffset != "undefined" ? verticalOffset : 0;

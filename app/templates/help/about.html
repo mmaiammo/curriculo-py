@@ -1,0 +1,455 @@
+{% extends 'shared/base.html' %} {% block title %}Sobre {% endblock%} {% block
+css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/about.min.css') }}"
+/>
+
+{% endblock%} {% block content %}
+<div class="mx-auto a4 shadow bg-body rounded about">
+  <div class="titulo">
+    <p class="developby">
+      <span class="_first">desenvolvido por</span>
+      <span class="_secound">Marcelo Maia</span>
+    </p>
+    <h1>Recursos utilizados nesse projeto</h1>
+    <p class="description">
+      Após o início do desenvolvimento desse projeto me veio a cabeça uma
+      pergunta: "Quanta
+      <a
+        href="#"
+        title="
+        Tecnologia é o conjunto de técnicas, 
+        habilidades, métodos e processos usados na 
+        produção de bens ou serviços, ou na 
+        realização de objetivos, como em 
+        investigações científicas."
+        ><mark>tecnologia</mark></a
+      >
+      foi utilizada?" A partir de então passei a relacionar todos os recursos que eu queria utilizar e, assim, os reuni neste documento. 
+      Aproveitei e linkei cada recurso a organização responsável pela sua manutenção.  
+    </p>
+  </div>
+
+  <div class="row">
+    <!-- Line 1 -->
+    <div class="card-container card--fixedWidth">
+      <div class="card">
+        <div class="card__image" id="card-1">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/html5.png') }}"
+            alt="HTML5"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a href="https://www.w3c.br/" class="link-secondary" target="_blank"
+              >HTML5</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-2">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/css.png') }}"
+            alt="CSS3"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://www.w3.org/TR/css3-roadmap/"
+              class="link-secondary"
+              target="_blank"
+              >CSS3</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-3">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/python.png') }}"
+            alt="Python"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://www.python.org/"
+              class="link-secondary"
+              target="_blank"
+              >Python</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-4">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/js.png') }}"
+            alt="Javascript"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://262.ecma-international.org/12.0/"
+              class="link-secondary"
+              target="_blank"
+              >Javascript</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-4">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/flask.png') }}"
+            alt="Flask"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://flask.palletsprojects.com/en/2.1.x/"
+              class="link-secondary"
+              target="_blank"
+              >Flask</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-5">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/nodejs.png') }}"
+            alt="NodeJS"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://nodejs.org/en/"
+              class="link-secondary"
+              target="_blank"
+              >NodeJS</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+    </div>
+    <!-- /.card-container -->
+
+    <!-- Line 2 -->
+    <div class="card-container card--fixedWidth">
+      <div class="card">
+        <div class="card__image" id="card-1">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/postman.png') }}"
+            alt="Postman"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">Postman</p>
+          <span class="line _long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-2">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/mongo.png') }}"
+            alt="MongoDB"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://www.mongodb.com/pt-br"
+              class="link-secondary"
+              target="_blank"
+              >MongoDB</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-3">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/moon.png') }}"
+            alt="Moon Modeler"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://www.datensen.com/data-modeling/moon-modeler-for-databases.html"
+              class="link-secondary"
+              target="_blank"
+              >Moon Modeler</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-4">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/docker.png') }}"
+            alt="Docker"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://www.docker.com/"
+              class="link-secondary"
+              target="_blank"
+              >Docker</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-4">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/fontawesome.png') }}"
+            alt="Fontawesome"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://fontawesome.com/"
+              class="link-secondary"
+              target="_blank"
+              >Fontawesome</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-5">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/github.png') }}"
+            alt="GitHub"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a href="https://github.com/" class="link-secondary" target="_blank"
+              >GitHub</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+    </div>
+    <!-- /.card-container -->
+
+    <!-- Line 3 -->
+    <div class="card-container card--fixedWidth">
+      <div class="card">
+        <div class="card__image" id="card-1">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/bootstrap.png') }}"
+            alt="Bootstrap 5"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+              class="link-secondary"
+              target="_blank"
+              >Bootstrap 5</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-2">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/vscode.png') }}"
+            alt="VS Code"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://code.visualstudio.com/"
+              class="link-secondary"
+              target="_blank"
+              >VS Code</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-3">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/heroku.png') }}"
+            alt="Heroku"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://www.heroku.com"
+              class="link-secondary"
+              target="_blank"
+              >Heroku</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-3">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/sass.png') }}"
+            alt="Sass"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://sass-lang.com/"
+              class="link-secondary"
+              target="_blank"
+              >Sass</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-3">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/datatables.png') }}"
+            alt="Datatables CDN"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://cdn.datatables.net/"
+              class="link-secondary"
+              target="_blank"
+              >Datatables CDN</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card">
+        <div class="card__image" id="card-3">
+          <div class="image-overlay"></div>
+          <img
+            class="thumbs"
+            src="{{ url_for('static', filename='img/about/api.png') }}"
+            alt="API Rest"
+          />
+        </div>
+        <div class="card__description card-body">
+          <p class="card-text">
+            <a
+              href="https://pt.wikipedia.org/wiki/REST"
+              class="link-secondary"
+              target="_blank"
+              >API Rest</a
+            >
+          </p>
+          <span class="_long"></span>
+        </div>
+      </div>
+      <!-- /.card -->
+    </div>
+    <!-- /.card-container -->
+  </div>
+</div>
+{% endblock%} {% block js %}
+<script>
+  $(".card").click(function (arg) {
+    $(this).toggleClass("is-checked");
+  });
+</script>
+{% endblock%}

@@ -1,0 +1,186 @@
+/* --------------------------------------------------------------
+ *
+ *     ██████ ███████ ███████     ██████   █████  ███████ ███████ 
+ *    ██      ██      ██          ██   ██ ██   ██ ██      ██      
+ *    ██      ███████ ███████     ██████  ███████ ███████ █████   
+ *    ██           ██      ██     ██   ██ ██   ██      ██ ██      
+ *     ██████ ███████ ███████     ██████  ██   ██ ███████ ███████ 
+ *                                                                
+ *        [- Font modified May 6, 2022 by marcelo maia -]
+ *                                           
+ * ------------------------------------------------------------ */
+.about {
+  margin-top: 5rem;
+}
+.titulo {
+  padding: 0rem 0 0 1.5rem;
+  .developby {
+    margin-bottom: 25px;
+    ._first {
+      color: #8d8d8d;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 0.6rem;
+      margin-right: -5px !important;
+    }
+    ._secound {
+      color: #c73036;
+      font-family: "Grape Nuts", cursive;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  }
+  h1 {
+    color: #333333;
+    font-family: "Bitter", serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 0;
+  }
+  .description {
+    color: #333333;
+    margin: 10px 40px 0 0;
+    padding: 20px 0 5px;
+    font-family: Georgia, serif;
+    font-size: 0.8rem;
+    border-top: solid 1px #ccc;
+    a[title]:hover::after {
+      font-size: .8rem;
+    }
+  }
+}
+
+.thumbs {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 85px;
+}
+
+// card scss
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px 5px 5px 5px;
+  padding: 5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  align-items: left;
+  margin: 5px;
+  padding: 0;
+  width: 120px;
+  background: #fff;
+  box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card__image {
+  position: relative;
+  $size: 100px;
+  width: 100%;
+  display: block;
+  max-width: 120px;
+  height: 85px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+    &:after {
+      bottom: 0;
+      //   color: rgba(255, 255, 255, 1);
+      color: #fee440;
+      transition: (all 0.15s);
+    }
+    .image-overlay {
+      background-color: rgba(242, 249, 167, 0.33);
+      transition: (all 0.15s);
+    }
+  }
+
+  &:after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -4em;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: "FontAwesome";
+    font-size: 1em;
+    text-align: center;
+    content: "\f00c";
+    color: rgba(255, 255, 255, 0);
+    color: #fff;
+    transition: (all 0.15s);
+  }
+
+  .image-overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: rgba (255, 255, 255, 0);
+    transition: (backgroundColor, 0.15s);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.card__actions {
+  font-family: serif;
+  font-size: 25px;
+  line-height: 12px;
+  color: #a3a3a3;
+  text-align: right;
+  padding: 0 8px 0 0;
+  margin: 0;
+}
+
+// .is-checked animations
+
+.card.is-checked {
+  .card__image {
+    &:after {
+      font-size: 2.26em;
+      bottom: 0;
+      transition: all 0.15s;
+    }
+
+    .image-overlay {
+      background-color: rgba(35, 155, 55, 0.66);
+    }
+  }
+}
+
+.card__description span {
+  display: block;
+  border-radius: 3px;
+  margin: 0;
+  background-color: #a3a3a3;
+  &._long {
+    height: 4px;
+  }
+  &._short {
+    height: 4px;
+    width: 48px;
+  }
+}
+
+.card-text {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 0.8rem;
+}

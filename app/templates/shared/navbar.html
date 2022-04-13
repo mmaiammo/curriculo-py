@@ -58,8 +58,8 @@
         <button class="dropbtn"><i class="fa-solid fa-users-gear"></i>  Configurações</button>
         <div class="dropdown-content">
           <a href="#" class="closebtn" onclick="print()"><i class="fa-solid fa-print"></i>Imprimir</a>
-          <!-- <a href="#"><i class="fa-solid fa-user-plus"></i> Novo Curriculo</a> -->
           <a href="{{ url_for('webapp.list') }}"><i class="fa-solid fa-users"></i>Lista de Curriculos</a>
+          <a href="{{ url_for('webapp.about') }}"><i class="fa-solid fa-circle-info"></i>Sobre</a>
         </div>
       </div>
 
