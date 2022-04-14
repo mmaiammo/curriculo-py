@@ -43,6 +43,9 @@ $profissional-varios-instituicao: #bc6c25;
     }
 
     .competencias {
+      ul {
+        margin-bottom: 0;
+      }
       .hr {
         max-width: 25rem;
       }
