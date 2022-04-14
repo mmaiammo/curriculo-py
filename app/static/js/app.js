@@ -1,3 +1,4 @@
+//-- INFO: Controla o carregamento da tela
 if (document.readyState) {
   document.onreadystatechange = checkstate;
 } else if (document.addEventListener) {
@@ -8,13 +9,11 @@ function checkstate() {
     document.getElementsByClassName("main")[0].style.visibility = "visible";
   }
 }
-
 function saydone() {
   document.getElementsByClassName("main")[0].style.visibility = "visible";
 }
 
-
-// Troca estilo
+//-- INFO: Troca estilo
 window.onload = function () {
   var pathname = $(location).attr("pathname");
   let theme = sessionStorage.getItem("theme");
@@ -35,7 +34,7 @@ window.onload = function () {
   }
 };
 
-// Troca CSS
+//-- INFO: Trocar o CSS
 function troca_css(cssFile) {
   var pathname = $(location).attr("pathname");
   sessionStorage.setItem("theme", cssFile);
@@ -48,7 +47,7 @@ function troca_css(cssFile) {
   }
 }
 
-// #region print 
+//-- INFO: Print usando jQuery.ptiny.min.js
 function print() {
   $("#a4").print({
     globalStyles: true,
@@ -65,10 +64,8 @@ function print() {
     doctype: "<!doctype html>",
   });
 }
-// .end_region_print
 
-// Topo da tela
-
+// INFO: Levar par o Topo da tela
 $(function () {
   $(document).on("scroll", function () {
     if ($(window).scrollTop() > 100) {
@@ -79,7 +76,6 @@ $(function () {
   });
   $(".seta-top").on("click", scrollToTop);
 });
-
 function scrollToTop() {
   verticalOffset = typeof verticalOffset != "undefined" ? verticalOffset : 0;
   element = $("body");
@@ -91,4 +87,3 @@ function scrollToTop() {
     .animate({ scrollTop: 0 }, 150)
     .animate({ scrollTop: 0 }, 50);
 }
-// .end_topo_da_tela

@@ -61,11 +61,12 @@ body {
   margin-bottom: 20px;
   font-size: 28px;
   padding: 0px 10px;
+  
 }
 
 /* Default Class
    ------------------  */
-.a4 {
+.a4 {  
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 1rem;
   width: 210mm !important;
@@ -247,14 +248,14 @@ body {
     }
 
     .varios {
-      margin: 5rem 0;
+      margin-top: 2rem;
       .row {
         .formacao {
           .hr {
             margin-bottom: 0.3rem;
           }
           .instituicao {
-            margin: .5rem 0 0 0;
+            margin: 0.5rem 0 0 0;
             color: #1aa2d3;
           }
           .curso,
@@ -267,11 +268,16 @@ body {
     }
 
     .assinatura {
-      margin: 3rem 0;
+      margin: 2rem 0;
+      text-align: center;
       img {
-        width: 8.5rem;
         -webkit-filter: sepia(100%) hue-rotate(190deg) saturate(300%);
         filter: sepia(100%) hue-rotate(190deg) saturate(300%);
+      }
+      .cpfass {
+        font-family: 'Patrick Hand', cursive;
+        margin-top: -1rem;
+        padding-left: .5rem;
       }
     }
   }
