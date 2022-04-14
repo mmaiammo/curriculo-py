@@ -1,3 +1,5 @@
+$profissional-experiencias-empresa-nome: #bc6c25;
+$profissional-varios-instituicao: #bc6c25;
 .a4 {
   color: #2c3e50 !important;
   -webkit-box-direction: reverse;
@@ -24,6 +26,37 @@
       bottom 2px left 100px;
     background-size: 250px auto, auto 310px, 110px auto;
     background-color: #fff;
+
+    .objetivo {
+      margin-top: 3rem;
+      .hr {
+        max-width: 26rem;
+      }
+    }
+
+    .experiencias {
+      .empresa {
+        .nome {
+          color: $profissional-experiencias-empresa-nome;
+        }
+      }
+    }
+
+    .competencias {
+      .hr {
+        max-width: 25rem;
+      }
+    }
+
+    .varios {
+      .formacao {
+        .descricao {
+          .instituicao {
+            color: $profissional-varios-instituicao;
+          }
+        }
+      }
+    }
 
     .assinatura {
       margin: 2rem;
