@@ -9,11 +9,12 @@
  *        [- Sass technology | Marcelo Maia -]
  *                                           
  * ------------------------------------------------------------ */
+@import "../config/_variables.scss";
 
 /* Elements
    ------------------  */
 body {
-  background-color: #f8edeb !important;
+  background-color: $body-background-color;
   .seta-top {
     position: fixed;
     opacity: 0;
@@ -61,13 +62,18 @@ body {
   margin-bottom: 20px;
   font-size: 28px;
   padding: 0px 10px;
-  
 }
 
 /* Default Class
    ------------------  */
-.a4 {  
-  font-family: "PT Sans Narrow", sans-serif;
+.a4 {
+  color: $A4-color;
+  -webkit-box-direction: $A4-webkit-box-direction;
+  -ms-flex-direction: $A4-ms-flex-direction;
+  flex-direction: $A4-flex-direction;
+  font-family: $A4-font-family;
+
+  
   font-size: 1rem;
   width: 210mm !important;
   height: auto !important;
@@ -114,9 +120,11 @@ body {
 
   // Pessoal side
   .pessoal {
+    background-color: $pessoal-background-color;
     padding: 0;
 
     .nome {
+      background-color: $pessoal-nome-background-color;
       opacity: 0.7;
       padding-top: 1rem;
       position: relative;
@@ -228,6 +236,7 @@ body {
           font-size: 0.7rem;
         }
         .nome {
+          color: $profissional-experiencias-empresa-nome;
           font-size: 1rem;
           font-weight: bold;
         }
@@ -275,9 +284,9 @@ body {
         filter: sepia(100%) hue-rotate(190deg) saturate(300%);
       }
       .cpfass {
-        font-family: 'Patrick Hand', cursive;
+        font-family: "Patrick Hand", cursive;
         margin-top: -1rem;
-        padding-left: .5rem;
+        padding-left: 0.5rem;
       }
     }
   }

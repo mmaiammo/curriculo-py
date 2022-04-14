@@ -1,3 +1,5 @@
+$profissional-experiencias-empresa-nome: #16a085;
+
 .a4 {
   color: #aaa;
   i {
@@ -22,6 +24,19 @@
     background-position: left top 0px;
     background-color: white;
     background-size: 550px auto;
+
+
+    .experiencias {
+      .empresa {
+        .nome {
+          color: $profissional-experiencias-empresa-nome;
+        }
+      }
+    }
+
+
+
+
     .varios {
       .row {
         .formacao {

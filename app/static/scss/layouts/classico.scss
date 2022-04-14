@@ -1,11 +1,16 @@
-.a4 {
-  color: #666 !important;
+$A4-color: #666;
+$pessoal-background-color: #e5e5e5;
+$nome-background-color: #1b7ea2;
+$profissional-experiencias-empresa-nome: #1aa2d3;
 
+.a4 {
+  
+  color: $A4-color;
   .pessoal {
-    background-color: #e5e5e5;
+    background-color: $body-background-color;
 
     .nome {
-      background-color: #1b7ea2;
+      background-color: $nome-background-color;
     }
   }
 
@@ -13,7 +18,7 @@
     .experiencias {
       .empresa {
         .nome {
-          color: #1aa2d3;
+          color: $profissional-experiencias-empresa-nome;
         }
       }
     }
