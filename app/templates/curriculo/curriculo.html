@@ -1,22 +1,16 @@
 {% extends 'shared/base.html' %} {% block title %} AS - Marcelo Maia {% endblock
 %} {% block css %}
-<link
-  rel="stylesheet"
-  id="cssid"
-  href=""
-/>
-{% endblock %} 
-
-{% block content %}
+<link rel="stylesheet" id="cssid" href="" />
+{% endblock %} {% block content %}
 <div class="row mx-auto a4">
   <!-- Info: Pessoal -->
-  <div class="col-4 pessoal p-0">
+  <div class="col-4 pessoal">
     <!-- Info: Imagem -->
     <div class="image">
       <img
         src="{{ url_for('static', filename='img/foto-1.jpg') }}"
         class="img-fluid"
-        alt=".."
+        alt="Marcelo Maia"
       />
     </div>
 
@@ -34,13 +28,15 @@
         <i class="far fa-user-circle"></i><span>características</span>
       </p>
       <div class="hr"></div>
-      <ul class="check-list">
-        <li><i class="fas fa-check fa-xs"></i> muito criativo</li>
-        <li><i class="fas fa-check fa-xs"></i> rápida adaptação</li>
-        <li><i class="fas fa-check fa-xs"></i> produtivo</li>
-        <li><i class="fas fa-check fa-xs"></i> extremamente concertrado</li>
-        <li><i class="fas fa-check fa-xs"></i> polímata</li>
-      </ul>
+      <div class="descricao">
+        <ul>
+          <li><i class="fas fa-check fa-xs"></i> muito criativo</li>
+          <li><i class="fas fa-check fa-xs"></i> rápida adaptação</li>
+          <li><i class="fas fa-check fa-xs"></i> produtivo</li>
+          <li><i class="fas fa-check fa-xs"></i> extremamente concertrado</li>
+          <li><i class="fas fa-check fa-xs"></i> polímata</li>
+        </ul>
+      </div>
     </div>
 
     <!-- Info: Sobre -->
@@ -84,7 +80,7 @@
         <p><i class="fa-solid fa-city"></i><span>Maceió/AL</span></p>
         <p class="linkedin">
           <i class="fab fa-linkedin"></i
-          ><span>linkedin.com/in/marcelo-maia-de-oliveira-83022557/</span>
+          ><span>marcelo-maia-de-oliveira-83022557</span>
         </p>
         <p>
           <i class="fab fa-facebook"></i
@@ -100,26 +96,26 @@
       </p>
       <div class="hr"></div>
       <div class="descricao">
-        <div class="row">
-          <div class="col-4">
-            <i class="fa-solid fa-film fa-2"></i>
+        <div class="row d-flex justify-content-between">
+          <div class="item">
+            <i class="fa-solid fa-film fa-2xl"></i>
           </div>
-          <div class="col-4">
-            <i class="fa-solid fa-plane-departure fa-2"></i>
+          <div class="item">
+            <i class="fa-solid fa-plane-departure fa-2xl"></i>
           </div>
-          <div class="col-4">
-            <i class="fa-solid fa-graduation-cap fa-2"></i>
+          <div class="item">
+            <i class="fa-solid fa-graduation-cap fa-2xl"></i>
           </div>
         </div>
-        <div class="row">
-          <div class="col-4">
-            <i class="fa-solid fa-music fa-2"></i>
+        <div class="row d-flex justify-content-between">
+          <div class="item">
+            <i class="fa-solid fa-music fa-2xl"></i>
           </div>
-          <div class="col-4">
-            <i class="fa-solid fa-umbrella-beach fa-2"></i>
+          <div class="item">
+            <i class="fa-solid fa-umbrella-beach fa-2xl"></i>
           </div>
-          <div class="col-4">
-            <i class="fa-solid fa-utensils fa-2"></i>
+          <div class="item">
+            <i class="fa-solid fa-utensils fa-2xl"></i>
           </div>
         </div>
       </div>
@@ -147,100 +143,51 @@
       <div class="hr"></div>
       <div class="descricao">
         <ul class="check-list">
+          <li><i class="fas fa-check fa-xs check"></i>Windows e Linux</li>
           <li>
-            <img
-              src="{{url_for('static', filename='img/gauges/5.gauges.png')}}"
-              class="img-fluid"
-              alt="excelente"
-            />
-            <i class="fas fa-check fa-xs check"></i>Windows e Linux
+            <i class="fas fa-check fa-xs check"></i>Shell script, Powershell,
+            Bash
           </li>
           <li>
-            <img
-              src="{{url_for('static', filename='img/gauges/4.gauges.png')}}"
-              class="img-fluid"
-              alt="muito bom"
-            />
-            <i class="fas fa-check fa-xs check"></i>Shell script, Powershell, Bash
+            <i class="fas fa-check fa-xs check"></i>Modelagem em análise
+            orientada a objetos com UML
           </li>
           <li>
-            <img
-              src="{{url_for('static', filename='img/gauges/4.gauges.png')}}"
-              class="img-fluid"
-              alt="muito bom"
-            />
-            <i class="fas fa-check fa-xs check"></i>Modelagem em análise orientada a
-            objetos com UML
+            <i class="fas fa-check fa-xs check"></i>Python, Flask, Docker,
+            NodeJS, MongoDB,
           </li>
           <li>
-            <img
-              src="{{url_for('static', filename='img/gauges/3.gauges.png')}}"
-              class="img-fluid"
-              alt="bom"
-            />
-            <i class="fas fa-check fa-xs check"></i>Python, Flask, Docker, NodeJS, MongoDB,
-
+            <i class="fas fa-check fa-xs check"></i>Web API, MVC, PHP Laravel,
+            Ajax, T-SQL, Bootstrap, ArgularJS, jQuery
           </li>
           <li>
-            <img
-              src="{{url_for('static', filename='img/gauges/3.gauges.png')}}"
-              class="img-fluid"
-              alt="bom"
-            />
-            <i class="fas fa-check fa-xs check"></i>Web API, MVC, PHP Laravel, Ajax,
-            T-SQL, Bootstrap, ArgularJS, jQuery
-          </li>
-          <li>
-            <img
-              src="{{url_for('static', filename='img/gauges/4.gauges.png')}}"
-              class="img-fluid"
-              alt="muito bom"
-            />
             <i class="fas fa-check fa-xs check"></i>C, C#, SQL Server, MySQL,
             Enterprise Architect
           </li>
           <li>
-            <img
-              src="{{url_for('static', filename='img/gauges/5.gauges.png')}}"
-              class="img-fluid"
-              alt="excelente"
-            />
-            <i class="fas fa-check fa-xs check"></i>Especialista em front-end, UX Design, CSS, Sass
-            
+            <i class="fas fa-check fa-xs check"></i>Especialista em front-end,
+            UX Design, CSS, Sass
           </li>
           <li>
-            <img
-              src="{{url_for('static', filename='img/gauges/4.gauges.png')}}"
-              class="img-fluid"
-              alt="muito bom"
-            />
             <i class="fas fa-check fa-xs check"></i>Atuação em ambientes de
             desenvolvimento ágil, Scrum
           </li>
           <li>
-            <img
-              src="{{url_for('static', filename='img/gauges/5.gauges.png')}}"
-              class="img-fluid"
-              alt="excelente"
-            />
-            <i class="fas fa-check fa-xs check"></i>Desenvolvimento de documentação de
-            sistemas
+            <i class="fas fa-check fa-xs check"></i>Desenvolvimento de
+            documentação de sistemas
           </li>
           <li>
-            <img
-              src="{{url_for('static', filename='img/gauges/5.gauges.png')}}"
-              class="img-fluid"
-              alt="excelente"
-            />
-            <i class="fas fa-check fa-xs check"></i>Elaboração e desenvolvimento de
-            modelagem de dados de projeto e conceitual
+            <i class="fas fa-check fa-xs check"></i>Elaboração e desenvolvimento
+            de modelagem de dados de projeto e conceitual
           </li>
         </ul>
       </div>
     </div>
 
+    <div class="anime_hq"></div>
+
     <!-- Info: Experiência -->
-    <div class="experencias">
+    <div class="experiencias">
       <p class="header">
         <i class="fa-solid fa-briefcase"></i><span>experiências</span>
       </p>
@@ -248,12 +195,12 @@
       <div class="descricao">
         <div class="row">
           <div class="col-3 empresa">
-            <p>Empresa Optotal HOYA</p>
-            <p>de 06/2014 a 04/2018</p>
+            <p class="nome">Empresa Optotal HOYA</p>
+            <p class="periodo">de 06/2014 a 04/2018</p>
           </div>
           <div class="col-9 atividades">
-            <p>Cargo de Analista de Sistemas</p>
-            <p>
+            <p class="cargo">Cargo de Analista de Sistemas</p>
+            <p class="detalhamento">
               Modernização da plataforma de e-commerce proprietária através de
               levantamento, desenvolvimento, teste e implantação;
               Desenvolvimento da identidade visual de todo sistema seguindo os
@@ -267,12 +214,12 @@
 
         <div class="row">
           <div class="col-3 empresa">
-            <p>Empresa Cast Informática S/A</p>
-            <p>de 07/2012 a 06/2014</p>
+            <p class="nome">Empresa Cast Informática S/A</p>
+            <p class="periodo">de 07/2012 a 06/2014</p>
           </div>
           <div class="col-9 atividades">
-            <p>Cargo de Analista de Sistemas</p>
-            <p>
+            <p class="cargo">Cargo de Analista de Sistemas</p>
+            <p class="detalhamento">
               Desenvolvimento de Novos Projetos. Desenvolvimento da identidade
               visual de todos os sistemas em que atuei seguindo os preceitos da
               W3c e UX Design. Geração de scripts para migração de dados.
@@ -283,12 +230,12 @@
 
         <div class="row">
           <div class="col-3 empresa">
-            <p>Empresa Portal Card Ltda</p>
-            <p>de 02/2010 a 07/2012</p>
+            <p class="nome">Empresa Portal Card Ltda</p>
+            <p class="periodo">de 02/2010 a 07/2012</p>
           </div>
           <div class="col-9 atividades">
-            <p>Cargo de Analista de Sistemas</p>
-            <p>
+            <p class="cargo">Cargo de Analista de Sistemas</p>
+            <p class="detalhamento">
               Desenvolvimento de diversas aplicações: Web, Desktop e App
               Console. Atualização e Padronização de camada de apresentação para
               todos os produtos da empresa junto aos clientes, como principais
@@ -300,12 +247,12 @@
 
         <div class="row">
           <div class="col-3 empresa">
-            <p>Empresa Curso ADV Informática</p>
-            <p>de 09/2004 a 02/2010</p>
+            <p class="nome">Empresa Curso ADV Informática</p>
+            <p class="periodo">de 09/2004 a 02/2010</p>
           </div>
           <div class="col-9 atividades">
-            <p>Supervisor de Ensino</p>
-            <p>
+            <p class="cargo">Supervisor de Ensino</p>
+            <p class="detalhamento">
               Desenvolvimento e manutenção de web sites institucional.
               Apresentação e Demonstração de treinamentos em reuniões e
               palestras. Ministrar treinamentos de programação web, desktop e
@@ -324,28 +271,32 @@
     </div>
 
     <!-- Info: Formação / Idioma -->
-    <div class="varios row">
-      <div class="col-6 formacao">
-        <p class="header">
-          <i class="fa-solid fa-user-graduate"></i><span>formação</span>
-        </p>
-        <div class="hr"></div>
-        <div class="descricao">
-          <div class="row">
-            <p>Escola Superior Candido Mendes</p>
-            <p>Tecnologia em Análise e Desenvolvimento de Sistemas</p>
-            <p>Rio de Janeiro/RJ</p>
+    <div class="varios">
+      <div class="row">
+        <div class="col-6 formacao">
+          <p class="header">
+            <i class="fa-solid fa-user-graduate"></i><span>formação</span>
+          </p>
+          <div class="hr"></div>
+          <div class="descricao">
+            <p class="instituicao">Escola Superior Candido Mendes</p>
+            <p class="curso">
+              Tecnologia em Análise e Desenvolvimento de Sistemas
+            </p>
+            <p class="local">Rio de Janeiro/RJ</p>
           </div>
         </div>
-      </div>
 
-      <div class="col-6 idioma">
-        <p class="header"><i class="fas fa-language"></i><span>idioma</span></p>
-        <div class="hr"></div>
-        <div class="descricao">
-          <div class="row">
-            <p><i class="fas fa-check fa-xs"></i><span>inglês</span></p>
-            <p><i class="fas fa-check fa-xs"></i><span>espanhol</span></p>
+        <div class="col-6 idioma">
+          <p class="header">
+            <i class="fas fa-language"></i><span>idioma</span>
+          </p>
+          <div class="hr"></div>
+          <div class="descricao">
+            <ul>
+              <li><i class="fas fa-check fa-xs"></i>inglês</li>
+              <li><i class="fas fa-check fa-xs"></i>espanhol</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -371,11 +322,8 @@
       </div>
     </div>
   </div>
-
 </div>
-{% endblock %} 
-
-{% block js %}
-       <script src="{{ url_for('static', filename='js/jQuery.print.min.js') }}"></script>
+{% endblock %} {% block js %}
+<script src="{{ url_for('static', filename='js/jQuery.print.min.js') }}"></script>
 
 {% endblock %}

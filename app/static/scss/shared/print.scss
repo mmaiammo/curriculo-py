@@ -9,11 +9,11 @@
  *        [- Font modified May 6, 2022 by marcelo maia -]
  *                                           
  * ------------------------------------------------------------ */
-.sidenav {
-    display: none !important;
+.sidenav, .seta-top, .navbar {
+    display: none;
 }
 .main {
-    margin: 0px; /* Same as the width of the sidenav */
+    margin: 0px;
     padding: 0px;
 }
 .a4 {
@@ -23,9 +23,7 @@
     margin: 0px !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.smoothscroll-top {
-    display: none;
-}
+
 @page {
     margin: 1rem 1rem 0 1rem;
 }

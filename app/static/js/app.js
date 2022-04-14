@@ -72,12 +72,12 @@ function print() {
 $(function () {
   $(document).on("scroll", function () {
     if ($(window).scrollTop() > 100) {
-      $(".smoothscroll-top").addClass("show");
+      $(".seta-top").addClass("show");
     } else {
-      $(".smoothscroll-top").removeClass("show");
+      $(".seta-top").removeClass("show");
     }
   });
-  $(".smoothscroll-top").on("click", scrollToTop);
+  $(".seta-top").on("click", scrollToTop);
 });
 
 function scrollToTop() {

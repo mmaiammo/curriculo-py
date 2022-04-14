@@ -1,17 +1,14 @@
-.main .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.main span,
-.main p,
-.main li {
-  color: #2c3e50;
+.main {
+  span,
+  p,
+  li {
+    color: #2c3e50;
+  }
+  .row {
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
 }
 
 .main .pessoal {
@@ -34,7 +31,6 @@
 
 .main i {
   color: #273746;
-  padding-right: 0.5rem;
 }
 
 .main .nome {
@@ -48,49 +44,13 @@
 .main .nome h3,
 .main .nome h5,
 .main .nome p {
-  color: #E67E22;
+  color: #e67e22;
 }
 
 .main .nome-bg {
   background-color: transparent;
-  color: #E67E22;
+  color: #e67e22;
   opacity: 1;
-}
-
-.a4 {
-  height: 1570px !important;
-}
-
-.hr {
-  position: relative;
-  border-bottom: solid #aaa 1px;
-  width: 95%;
-  margin: -0.5rem 0 1rem 0;
-}
-
-ul {
-  list-style: none;
-}
-
-.header span {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-
-.descricao p {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 1rem;
-  padding-right: 0.8rem;
-}
-
-.image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 0 !important;
-  padding: 0 !important;
-  position: relative;
 }
 
 .nome {
@@ -128,25 +88,19 @@ ul {
   color: #fff;
 }
 
-.caracteristicas {
-  position: relative;
-  padding: 2rem 0 0 1rem;
-  margin-bottom: 0 !important;
-}
-
-.caracteristicas ul {
-  padding-left: 0.5rem;
-}
-
-.caracteristicas ul li {
-  list-style: none;
+.descricao p {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 1rem;
-  padding-bottom: 0.3rem !important;
+  padding-right: 0.8rem;
 }
 
-.caracteristicas .check-list i {
-  padding-right: 0.1rem !important;
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  position: relative;
 }
 
 .sobre {
@@ -159,113 +113,42 @@ ul {
   font-size: 1rem;
   margin-bottom: 0.5rem !important;
 }
+ 
 
-.contato {
-  position: relative;
-  padding: 3rem 0 0 1rem;
-  margin-bottom: 0 !important;
-}
-
-.contato .descricao p {
-  line-height: 90%;
-  margin-bottom: 0.5rem;
-}
-
-.contato .descricao p i {
-  width: 1.3rem;
-  font-size: 0.8rem;
-}
-
-.contato .descricao p span {
-  font-size: 0.8rem;
-}
-
-.linkedin span {
-  font-size: 0.7rem !important;
-}
-
-.hobbies {
-  position: relative;
-  padding: 1rem 0 0 1rem;
-  color: #666;
-}
-
-.hobbies .descricao .row div {
-  margin: 0 0 1rem 0;
-}
-
-.profissional {
-  padding: 1rem 0 0 1.5rem;
-}
-
-.objetivo {
-  padding-top: 2rem;
-  padding-right: 5rem;
-}
-
-.objetivo .descricao p {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.competencias {
-  position: relative;
-  padding: 2rem 0 0 0 !important;
-}
-
-.competencias ul li {
-  list-style: none;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 1rem;
-  padding-bottom: 0.3rem !important;
-}
-
-.competencias .check-list {
-  width: 97%;
-  padding-left: 0rem !important;
-  margin-bottom: 0 !important;
-}
-
-.competencias .check-list li {
-  line-height: 130%;
-  font-size: 1rem;
-  padding-bottom: 0.3rem !important;
-}
-
-.experencias {
+.experiencias {
   position: relative;
   padding: 2rem 0 0 0;
 }
 
-.experencias .row {
+.experiencias .row {
   padding-bottom: 1rem;
 }
 
-.experencias .empresa {
+.experiencias .empresa {
   padding: 0 0 0 0.5rem;
 }
 
-.experencias .empresa p {
+.experiencias .empresa p {
   margin: 0 0 0.3rem 0;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 0.7rem;
 }
 
-.experencias .empresa p:first-of-type {
+.experiencias .empresa p:first-of-type {
   font-family: "PT Sans Narrow", sans-serif;
   color: #2c3e50;
   font-size: 0.9rem;
   font-weight: bold;
 }
 
-.experencias .atividades p:first-of-type {
+.experiencias .atividades p:first-of-type {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 1rem;
   font-weight: bold;
   padding-bottom: 0.5rem;
 }
 
-.experencias .atividades p {
+.experiencias .atividades p {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 0.9rem;
   width: 95%;
@@ -316,7 +199,7 @@ ul {
 .assinatura img {
   width: 8.5rem;
   -webkit-filter: sepia(100%) hue-rotate(900deg) saturate(80%);
-          filter: sepia(100%) hue-rotate(900deg) saturate(80%);
+  filter: sepia(100%) hue-rotate(900deg) saturate(80%);
 }
 
 .assinatura .cpfass {

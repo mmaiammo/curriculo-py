@@ -6,119 +6,273 @@
  *    ██           ██      ██     ██   ██ ██   ██      ██ ██      
  *     ██████ ███████ ███████     ██████  ██   ██ ███████ ███████ 
  *                                                                
- *        [- Font modified May 6, 2022 by marcelo maia -]
+ *        [- Sass technology | Marcelo Maia -]
  *                                           
  * ------------------------------------------------------------ */
-ul {
-  list-style: none;
+
+/* Elements
+   ------------------  */
+body {
+  background-color: #f8edeb !important;
+  .seta-top {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    z-index: 99;
+    background-color: #fff3b0;
+    color: #335c67;
+    width: 47px;
+    height: 44px;
+    line-height: 44px;
+    right: 25px;
+    bottom: -25px;
+    padding-top: 2px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.2s;
+    border: solid 1px #ffddd2;
+
+    &.show {
+      visibility: visible;
+      cursor: pointer;
+      opacity: 1;
+      bottom: 25px;
+    }
+
+    &:hover {
+      background-color: #fff3b0;
+      color: #335c67;
+      transition: all 0.2s ease-in-out;
+      transition-delay: 0;
+    }
+
+    i.fa {
+      line-height: inherit;
+    }
+  }
 }
 
-i {
-  margin-right: 0.1rem;
-}
-
-.hr {
-  position: relative;
-  border-bottom: solid #aaa 1px;
-  width: 95%;
-  margin: -0.5rem 0 1rem 0;
-}
-
+/* Principal classe
+   ------------------  */
 .main {
-  visibility: hidden;
   margin-top: 65px;
+  margin-bottom: 20px;
   font-size: 28px;
   padding: 0px 10px;
-
 }
 
+/* Default Class
+   ------------------  */
 .a4 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1rem;
   width: 210mm !important;
   height: auto !important;
   border: 1px solid #e5e5e5 !important;
   margin: 1rem 0 0 1rem !important;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-.awal {
-  float: left;
-  color: #f35d5c;
-  background: #fff;
-  line-height: 50px;
-  padding-right: 10px;
-  font-family: times;
-  font-size: 50px;
-}
+  ul {
+    list-style: none;
+    padding-left: 0rem;
+    li {
+      padding-bottom: 0.3rem;
+      font-size: 0.8rem;
+    }
+  }
 
-.smoothscroll-top {
-  position: fixed;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  text-align: center;
-  z-index: 99;
-  background-color: #fff3b0;
-  color: #335c67;
-  width: 47px;
-  height: 44px;
-  line-height: 44px;
-  right: 25px;
-  bottom: -25px;
-  padding-top: 2px;
-  border-radius: 5px;
-  transition: all 0.5s ease-in-out;
-  transition-delay: 0.2s;
-  border: solid 1px #ffddd2;
-}
+  i {
+    padding-right: 0.5rem;
+  }
+  .hr {
+    position: relative;
+    border-bottom: solid #aaa 1px;
+    width: 95%;
+    margin: -0.5rem 0 1rem 0;
+  }
 
-.smoothscroll-top:hover {
-  background-color: #fff3b0;
-  color: #335c67;
-  transition: all 0.2s ease-in-out;
-  transition-delay: 0;
-}
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+  }
 
-.smoothscroll-top.show {
-  visibility: visible;
-  cursor: pointer;
-  opacity: 1;
-  bottom: 25px;
-}
+  .header {
+    padding-top: 0.2rem;
+    span {
+      font-family: "PT Sans Narrow", sans-serif;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+  }
 
-.smoothscroll-top i.fa {
-  line-height: inherit;
-}
+  // Pessoal side
+  .pessoal {
+    padding: 0;
 
-.profissional {
-  padding: 1rem 0 0 1.5rem;
-}
+    .nome {
+      opacity: 0.7;
+      padding-top: 1rem;
+      position: relative;
+      top: -10px;
+      right: 0;
+      left: 0;
+      width: auto;
+      height: 135px;
+      color: #fff;
 
-.header {
-  padding: 1rem 0 0 0 !important;
-}
+      .firstname {
+        font-size: 2.5rem;
+        margin-bottom: 0 !important;
+        margin-left: 2rem;
+      }
 
-.competencias .check-list li {
-  font-size: 0.8rem !important;
-}
-.competencias .check {
-  display: none;
-}
-.competencias img {
-  width: 1.4rem;
-  height: 0.8rem;
-  margin-bottom: 0.2rem;
-  margin-right: 0.2rem;
-  /* filter: grayscale(50%); */
-}
+      .secondname {
+        font-size: 1.8rem;
+        margin-bottom: 0.3rem !important;
+        margin-left: 2rem;
+      }
 
-// .profissional {
-//   padding-top: 0 !important;
-// }
-// .profissional .objetivo {
-//   border: solid 1px #0f0 !important;
-//   padding: 0 !important;
-//   margin-bottom: 0;
-// }
+      .cargo {
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
 
+    .caracteristicas,
+    .sobre,
+    .contato,
+    .hobbies {
+      padding-left: 1rem;
+    }
+
+    .caracteristicas {
+      margin: 0rem;
+      .descricao {
+        font-size: 0.8rem;
+        margin-right: 0.7rem;
+        ul {
+          li {
+            line-height: 1.5rem;
+            padding-bottom: 0rem !important;
+          }
+        }
+      }
+    }
+    .sobre {
+      .descricao {
+        font-size: 0.8rem;
+        margin-right: 0.7rem;
+        p {
+          margin-bottom: 0.7rem;
+        }
+      }
+    }
+
+    .contato {
+      .descricao {
+        p {
+          line-height: 90%;
+          margin-bottom: 0.4rem;
+          i {
+            width: 1.3rem;
+            font-size: 0.8rem;
+          }
+          span {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+
+    .hobbies {
+      .row {
+        margin: 0 0.7rem 1rem 0;
+      }
+      .item {
+        text-align: center;
+        width: 3.5rem;
+        height: 2.5rem;
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  // Profissional side
+  .profissional {
+    padding: 0 0 0 1.5rem;
+
+    .objetivo {
+      margin-top: 1.3rem;
+    }
+
+    .anime_hq {
+      display: none;
+    }
+
+    .experiencias {
+      .row {
+        margin-right: 0.5rem;
+        margin-bottom: 2.5rem;
+      }
+      .empresa {
+        padding: 0 0 0 0.5rem;
+        p {
+          margin: 0 0 0.3rem 0;
+          font-size: 0.7rem;
+        }
+        .nome {
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
+
+      .atividades {
+        .cargo {
+          font-size: 1rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+        }
+
+        .detalhamento {
+          font-size: 0.78rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .varios {
+      margin: 5rem 0;
+      .row {
+        .formacao {
+          .hr {
+            margin-bottom: 0.3rem;
+          }
+          .instituicao {
+            margin: .5rem 0 0 0;
+            color: #1aa2d3;
+          }
+          .curso,
+          .local {
+            margin: 0.2rem 0 0 0;
+            font-size: 0.78rem;
+          }
+        }
+      }
+    }
+
+    .assinatura {
+      margin: 3rem 0;
+      img {
+        width: 8.5rem;
+        -webkit-filter: sepia(100%) hue-rotate(190deg) saturate(300%);
+        filter: sepia(100%) hue-rotate(190deg) saturate(300%);
+      }
+    }
+  }
+}
