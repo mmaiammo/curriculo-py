@@ -32,6 +32,15 @@ $ pip install autopep8
 $ pip freeze > requirements.txt
 ```
 
+- Criar o ambiente virtualenv
+```
+$ python3 -m venv venv
+```
+
+- Instalar Projeto baixado do Github
+```
+$ pip install -r requirements.txt
+```
 
 
 
