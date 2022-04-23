@@ -16,6 +16,7 @@
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Currículos Cadastrados</h1>
                 </div>
+
                 <div class="d-flexnavbar.minnavbar.mins conteudo">
 
                     {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %}
@@ -23,11 +24,17 @@
                         {{ message }}
                     </div>
                     {% endfor %} {% endif %} {% endwith %}
-
                     <!-- Add button curriculo -->
-                    <div class="col col-sm-12 add_box">
-                        <a href="#" class="btn btn-dark add_new">Adicionar Novo Currículo</a>
+                    <div class="d-grid gap-2 col-4 mx-auto mb-4 mt-4 newuser">
+                        <a href="#" class="cta">
+                            <span><i class="fa-solid fa-user-plus"></i> Novo Currículo</span>
+                            <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </a>
                     </div>
+                    
 
                     <!-- curriculo's tables -->
                     <div class="col col-sm-12">

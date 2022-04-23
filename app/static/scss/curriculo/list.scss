@@ -1,42 +1,76 @@
-#tblcurriculo {
-  // max-width: auto;
-}
+
+$color: #111;
+$primary: #fff;
+
 .conteudo {
-  font-size: .8rem;
-
+  font-size: 0.8rem;
 }
-
 
 .list-curriculo {
   font-family: "PT Sans Narrow", sans-serif;
   max-width: 992px;
-  
-}
-.add_box {
-  text-align: right;
-  margin: 0 0 2rem 0;
 }
 
-.add_new {
-  width: 180px;
-  height: 45px;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  border-radius: 45px;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  border: solid 1px #f4f1de;
-  background-color: #fdffb6;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  color: #335c67;
-}
+.newuser {
 
-.add_new:hover {
-  background-color: #fff;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
-  border: solid 1px #f8f9fa;
-  color: #335c67;
-  transform: translateY(-7px);
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .cta {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      border-radius: 28px;
+      border: 1px rgba($color, 0.5) solid;
+      background: rgba($primary, 0.5);
+      width: 56px;
+      height: 56px;
+      transition: all 0.3s ease;
+    }
+    span {
+      position: relative;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 900;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      vertical-align: middle;
+      i {
+        margin-right: .3rem;
+      }
+    }
+    svg {
+      position: relative;
+      top: 0;
+      margin-left: 10px;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: $color;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      &:before {
+        width: 100%;
+        background: rgba($primary, 1);
+      }
+      svg {
+        transform: translateX(0);
+      }
+    }
+    &:active {
+      transform: scale(0.96);
+    }
+  }
 }
