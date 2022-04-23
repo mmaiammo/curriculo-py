@@ -41,21 +41,3 @@ $ python3 -m venv venv
 ```
 $ pip install -r requirements.txt
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-$ python3 -m venv venv
-
-- Instalar Projeto baixado do Github
-$ pip install -r requirements.txt
->>>>>>> Stashed changes
