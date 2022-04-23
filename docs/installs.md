@@ -14,6 +14,7 @@
 
 -  Todos os pacotes necessários
 -------------------------------
+```
 $ pip install flask
 $ pip install mypy
 $ pip install flake8
@@ -24,11 +25,12 @@ $ pip install dnspython
 $ pip3 install pandas --upgrade
 $ pip install pymongo
 $ pip install autopep8
-
+```
 
 - Run freeze
+```
 $ pip freeze > requirements.txt
-
+```
 
 
 
