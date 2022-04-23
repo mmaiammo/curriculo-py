@@ -15,9 +15,11 @@ def index():
 
 @webapp.route('/list')
 def list():
-    response = requests.get(current_app.config["API_MONGO"])
+    url = current_app.config["API_MONGO"] + "api/curriculo/findAll"
+    response = requests.get(url)
     curriculos = response.json()
-    return render_template('curriculo/list.html', curriculos=curriculos)
+    return render_template('curriculo/list.html',
+                           curriculos=curriculos["curriculo"])
 
 
 @webapp.route('/list/<id>')
