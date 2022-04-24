@@ -3,7 +3,8 @@
  |_ _|| \| |/ __||_   _|/_\  | |   | |   
   | | | .` |\__ \  | | / _ \ | |__ | |__ 
  |___||_|\_||___/  |_|/_/ \_\|____||____|
-                                      
+
+![Desenvolvimento, Marcelo Maia](https://www.unicid.edu.br/wp-content/uploads/2020/09/analise_e_desenvovimento_de_sistemas.jpg)                                 
 ```
 # Como desenvolver neste app
 
