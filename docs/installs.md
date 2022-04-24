@@ -1,11 +1,11 @@
-```
-  ___  _  _  ___  _____  _    _     _    
- |_ _|| \| |/ __||_   _|/_\  | |   | |   
-  | | | .` |\__ \  | | / _ \ | |__ | |__ 
- |___||_|\_||___/  |_|/_/ \_\|____||____|
+<p align="left">
+<figure>
+    <img src="https://blog.anhanguera.com/wp-content/uploads/2020/08/post_thumbnail-c43ae0837bac5b0fa9c09d8c332261cd.jpg"
+         alt="Desenvolvimento, Marcelo Maia">
+    <figcaption>Desenvolvimento 2022.</figcaption>
+</figure>
+</p>
 
-![Desenvolvimento, Marcelo Maia](https://www.unicid.edu.br/wp-content/uploads/2020/09/analise_e_desenvovimento_de_sistemas.jpg)                                 
-```
 # Como desenvolver neste app
 
 > __Criar o ambiente virtualenv__
