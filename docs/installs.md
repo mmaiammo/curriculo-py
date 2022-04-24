@@ -1,18 +1,26 @@
 ```
- .----------------.  .----------------.  .----------------.
-| .--------------. || .--------------. || .--------------. |
-| |   ______     | || |     _____    | || |   ______     | |
-| |  |_   __ \   | || |    |_   _|   | || |  |_   __ \   | |
-| |    | |__) |  | || |      | |     | || |    | |__) |  | |
-| |    |  ___/   | || |      | |     | || |    |  ___/   | |
-| |   _| |_      | || |     _| |_    | || |   _| |_      | |
-| |  |_____|     | || |    |_____|   | || |  |_____|     | |
-| |              | || |              | || |              | |
-| '--------------' || '--------------' || '--------------' |
- '----------------'  '----------------'  '----------------' 
+  ___  _  _  ___  _____  _    _     _    
+ |_ _|| \| |/ __||_   _|/_\  | |   | |   
+  | | | .` |\__ \  | | / _ \ | |__ | |__ 
+ |___||_|\_||___/  |_|/_/ \_\|____||____|
+                                      
+```
+# Como desenvolver neste app
+
+> __Criar o ambiente virtualenv__
+```
+$ python3 -m venv venv
 ```
 
--  Todos os pacotes necessários
+> __Instalar Projeto após cloná-lo do Github__
+> 
+> 📝 **Nota:** entre no diretório aonde o projeto foi clonado, via terminal/prompt de comando e, digite a instrução a seguir.
+> 
+```
+$ pip install -r requirements.txt
+```
+
+>  __Dependências__: usadas até o momento
 -------------------------------
 ```
 $ pip install flask
@@ -27,17 +35,7 @@ $ pip install pymongo
 $ pip install autopep8
 ```
 
-- Run freeze
+> __Run freeze__: exporta todas as dependências do projeto
 ```
 $ pip freeze > requirements.txt
-```
-
-- Criar o ambiente virtualenv
-```
-$ python3 -m venv venv
-```
-
-- Instalar Projeto baixado do Github
-```
-$ pip install -r requirements.txt
 ```
