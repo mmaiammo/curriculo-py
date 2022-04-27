@@ -1,6 +1,8 @@
 <p align="left">
-[<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
+[<img src="https://cdn.computercareers.org/wp-content/uploads/System-Analyst.jpg">]
+  
 </p>
+<p>(https://curriculo-py.herokuapp.com/)</p>
 
 # Como desenvolver neste app
 
