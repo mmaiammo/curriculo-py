@@ -9,12 +9,8 @@
 # Como desenvolver neste app
 
 > __Criar o ambiente virtualenv__
-```<p align="left">
-<img src="https://cdn.computercareers.org/wp-content/uploads/System-Analyst.jpg">
-</p>
+```
 $ python3 -m venv ven
-
-
 ```
 
 > __Instalar Projeto após cloná-lo do Github__
