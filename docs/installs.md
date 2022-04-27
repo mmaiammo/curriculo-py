@@ -1,6 +1,5 @@
 <p align="left">
-[<img src="https://cdn.computercareers.org/wp-content/uploads/System-Analyst.jpg">]
-  
+<img src="https://cdn.computercareers.org/wp-content/uploads/System-Analyst.jpg">
 </p>
 <p>(https://curriculo-py.herokuapp.com/)</p>
 
