@@ -2,7 +2,7 @@
 <img src="https://cdn.computercareers.org/wp-content/uploads/System-Analyst.jpg">
 </p>
 
-[Marcelo Maia](https://curriculo-py.herokuapp.com/)
+*[by Marcelo Maia](https://curriculo-py.herokuapp.com/  "Develop by Marcelo Maia")
 
 
 # Como desenvolver neste app
