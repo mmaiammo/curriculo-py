@@ -6,11 +6,11 @@
 [*__Developed by Marcelo Maia__*](https://curriculo-py.herokuapp.com/  "Developed by Marcelo Maia")
 
 
-# Como desenvolver neste app
+# Como rodar
 
 > __Criar o ambiente virtualenv__
 ```
-$ python3 -m venv ven
+$ python3 -m venv venv
 ```
 
 > __Instalar Projeto após cloná-lo do Github__
