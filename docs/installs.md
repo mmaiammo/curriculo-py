@@ -40,4 +40,3 @@ $ pip install autopep8
 ```
 $ pip freeze > requirements.txt
 ```
-[I'm an inline-style link](https://www.google.com)
