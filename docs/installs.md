@@ -3,7 +3,7 @@
 </p>
 
 
-[*Developed by Marcelo Maia*](https://curriculo-py.herokuapp.com/  "Developed by Marcelo Maia")
+[*__Developed by Marcelo Maia__*](https://curriculo-py.herokuapp.com/  "Developed by Marcelo Maia")
 
 
 # Como desenvolver neste app
