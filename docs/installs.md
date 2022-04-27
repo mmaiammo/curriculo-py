@@ -3,11 +3,16 @@
 </p>
 <p>[Marcelo Maia](https://curriculo-py.herokuapp.com)</p>
 
+[I'm an inline-style link](https://www.google.com)
 # Como desenvolver neste app
 
 > __Criar o ambiente virtualenv__
-```
-$ python3 -m venv venv
+```<p align="left">
+<img src="https://cdn.computercareers.org/wp-content/uploads/System-Analyst.jpg">
+</p>
+$ python3 -m venv ven
+
+
 ```
 
 > __Instalar Projeto após cloná-lo do Github__
@@ -37,3 +42,4 @@ $ pip install autopep8
 ```
 $ pip freeze > requirements.txt
 ```
+[I'm an inline-style link](https://www.google.com)
