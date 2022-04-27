@@ -3,7 +3,7 @@
 </p>
 
 
-<p>[Marcelo Maia](https://curriculo-py.herokuapp.com)</p>
+[Marcelo Maia](https://curriculo-py.herokuapp.com)
 
 [I'm an inline-style link](https://www.google.com)
 # Como desenvolver neste app
