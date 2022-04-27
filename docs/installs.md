@@ -1,7 +1,7 @@
 <p align="left">
 <img src="https://cdn.computercareers.org/wp-content/uploads/System-Analyst.jpg">
 </p>
-<p>[Marcelo Maia](https://curriculo-py.herokuapp.com/)</p>
+<p>[Marcelo Maia](https://curriculo-py.herokuapp.com)</p>
 
 # Como desenvolver neste app
 
