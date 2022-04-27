@@ -2,6 +2,7 @@
 <img src="https://cdn.computercareers.org/wp-content/uploads/System-Analyst.jpg">
 </p>
 <p>[Marcelo Maia](https://curriculo-py.herokuapp.com/)</p>
+[Duck Duck Go](https://duckduckgo.com)
 
 # Como desenvolver neste app
 
