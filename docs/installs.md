@@ -1,9 +1,5 @@
 <p align="left">
-<figure>
-    <img src="https://blog.anhanguera.com/wp-content/uploads/2020/08/post_thumbnail-c43ae0837bac5b0fa9c09d8c332261cd.jpg"
-         alt="Desenvolvimento, Marcelo Maia">
-    <figcaption>Desenvolvimento 2022.</figcaption>
-</figure>
+[<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
 </p>
 
 # Como desenvolver neste app
