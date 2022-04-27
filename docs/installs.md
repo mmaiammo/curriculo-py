@@ -5,7 +5,9 @@
 
 [Marcelo Maia](https://curriculo-py.herokuapp.com)
 
-[I'm an inline-style link](https://www.google.com)
+[Marcelo Maia](https://curriculo-py.herokuapp.com/)
+
+
 # Como desenvolver neste app
 
 > __Criar o ambiente virtualenv__
